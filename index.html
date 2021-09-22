@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mark 11</title>
+</head>
+<body>
+    <main id="container">
+         <h1>Cash Register Manager</h1>
+         <h3>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</h3>
+        <label for="BillAmount">Bill Amount:</label>
+        <input id="BillAmount" placeholder="Enter Bill Amount:" type="number">
+        <label for="CashGiven">Cash Given:</label>
+        <input id="CashGiven" placeholder="Enter Cash Given" type="number">
+        <button type="submit" id="show"> Show  </button>
+        <div id="errorMessage">
+
+        </div>
+
+        <table class="cashtable">
+            <caption>
+              Return Change
+            </caption>
+            <tr>
+              <th>No of Notes</th>
+              <td class="noOfnotes"></td>
+              <td class="noOfnotes"></td>
+              <td class="noOfnotes"></td>
+              <td class="noOfnotes"></td>
+              <td class="noOfnotes"></td>
+              <td class="noOfnotes"></td>
+              <td class="noOfnotes"></td>
+            </tr>
+            <tr>
+              <th>Note</th>
+              <td>2000</td>
+              <td>500</td>
+              <td>100</td>
+              <td>20</td>
+              <td>10</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+          </table>
+    <div>
+        <div class="social-contact">
+            <div class="social-icon-div">
+                <a href="https://www.linkedin.com/in/pranitingole/"><i class="fab fa-linkedin-in thisicon"></i></a>
+                <a href="https://github.com/pranitcode"><i class="fab fa-github thisicon"></i></a>
+                <a href="https://www.instagram.com/pranit.ingole/"><i class="fab fa-instagram thisicon"></i></a>
+                <a href="https://twitter.com/PranitIngole"><i class="fab fa-twitter thisicon"></i></a>
+            </div>
+
+        </div>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html> 

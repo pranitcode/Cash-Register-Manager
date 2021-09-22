@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+
+body {
+    margin:0;
+    padding: 0;
+     /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+     font-family:'Poppins', sans-serif;;
+}
+
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3rem auto;
+    justify-content: space-between;
+   
+}
+
+
+input {
+    margin: 2rem 0 2rem 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border: 1px solid #7c3aed;
+    font-weight: bold;
+   }
+
+   @keyframes radial-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(224, 42, 9, 0.692);
+    }
+
+    100% {
+        box-shadow: 0 0 0 30px rgba(124, 58, 237, 0);
+    }
+
+} 
+
+
+button {
+    margin-top:2rem;
+    background-color:  rgb(124, 58, 237);
+    outline: none;
+    width: 15.6rem;
+    border: none;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    font-weight: bold;
+    text-align: center;
+    animation: radial-pulse 1s infinite;
+    display: inline-block;
+
+  
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    transition: .3s;
+    }
+
+    .social-icon-div {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 6px;
+        padding:6px;
+        margin-top: 5rem;
+     }
+     .thisicon {
+         display: flex;
+         align-self: auto;
+         padding: 18px;
+         margin: 6px;
+         font-size:22px;
+       color: rgb(124, 58, 237);
+     
+     }
+     .thisicon:hover {
+        color:rgb(124, 58, 237);
+    }
+    .social-icon-div a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+   
+    #outputbox {
+        margin-top: 2rem ;
+    }  
+
+
+@media only screen and (max-width: 720px) {
+    .thisicon {
+        display: flex;
+        align-self: auto;
+        padding: 18px;
+        margin: 6px;
+        font-size:22px;
+      color: rgb(124, 58, 237);
+    
+    }
+
+    main {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:1rem auto;
+        justify-content: space-between;
+       
+    }
+    
+}
+
+/* tabal */
+.cashtable{
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+  .cashtable caption {
+    margin: 1rem auto;
+    font-size: x-large;
+    font-weight: 500;
+  }
+  
+  th,
+  td {
+    border: 2px solid black;
+    width: 0%;
+    border-collapse: collapse;
+    padding: 0.4rem;
+  }
+  
+
