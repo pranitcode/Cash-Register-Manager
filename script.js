@@ -6,9 +6,12 @@ const errorMessage = document.querySelector('#errorMessage');
 
 showbtn.addEventListener('click', () => {
     hideErrorMessage();
-    if (BillAmount.value > 0) {
-       if (CashGiven.value >= BillAmount.value) {
-            let amountshouldreturn = CashGiven.value-BillAmount.value
+    let bill = Number(BillAmount.value);
+    let cash = Number(CashGiven.value)
+
+    if (bill > 0) {
+       if (cash >= bill) {
+            let amountshouldreturn = cash-bill
             CalculateNotesamountToBeReturned(amountshouldreturn);
           } else {
            showerror("you don't have money 😐😣");
